@@ -92,7 +92,7 @@ Server configuration is done via environment variables:
 
 * ``CONFIG_FILE``: Path to configuration file (default: ``"config.toml"``)
 * ``DIAGRAM_FILE``: Path to SVG diagram file (default: ``"diagram.svg"``)
-* ``CORS_ORIGIN``: Allowed requests origins (default: ``*``)
+* ``CORS_ORIGIN``: Allow requests origins (default: ``*``)
 * ``ENV_NAME``: A string to identify the current environment name like ``"prod"`` or ``"stage"`` (default: None)
 * ``HOST``: Bind to host (default: ``"localhost"``)
 * ``PORT``: Listen on port (default: ``8080``)
@@ -162,8 +162,8 @@ make check project=myproject check=mycheck
 Return codes:
 
 - `0`: all checks were successful
-- `1`: some check failed
-- `2`: some check crashed (ie. Python exception)
+- `1`: some checks failed
+- `2`: some checks crashed (ie. Python exception)
 
 
 ## Tests
